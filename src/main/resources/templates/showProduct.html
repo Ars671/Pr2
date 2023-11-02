@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${product.getId()}"></p>
+<p th:text="${product.getName()}"></p>
+<p th:text="${product.getArticle()}"></p>
+<p th:text="${product.getType()}"></p>
+<p th:text="${product.getPrice()}"></p>
+
+<a th:href="@{/{id}/editProduct(id = ${product.getId()})}">Edit</a>
+
+<form th:method="DELETE" th:action="@{/{id}/product(id = ${product.getId()})}">
+    <input type="submit" value="DELETE">
+</form>
+
+</body>
+</html>
