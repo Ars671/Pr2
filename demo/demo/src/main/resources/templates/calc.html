@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form method="get" action="/home">
+        <input type="submit" value="Обратно">
+    </form>
+
+    <form method="post" action="/answer">
+        <input type="input" name="NamePrint3">
+        <select name="example">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="input" name="NamePrint4">
+        <input type="submit" value="Отправить">
+    </form>
+    <h1 th:text="${name}"></h1>
+</body>
+
+</html>

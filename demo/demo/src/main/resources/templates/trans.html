@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="get" action="/home">
+        <input type="submit" value="Обратно">
+    </form>
+
+    <form method="post" action="/trans">
+        <label for="inp">Количесвто</label>
+        <input type="input" name="NamePrint1" id="inp">
+
+        <br/>
+
+        <label for="one">Что переводим</label>
+        <select name="example1" id="one">
+            <option value="Рубль">Рубль</option>
+            <option value="Евро">Евро</option>
+            <option value="Доллар">Доллар</option>
+            <option value="Вона">Вона</option>
+        </select>
+
+        <br>
+
+        <label for="two">Во что переводим</label>
+        <select name="example2" id="two">
+            <option value="Рубль">Рубль</option>
+            <option value="Евро">Евро</option>
+            <option value="Доллар">Доллар</option>
+            <option value="Вона">Вона</option>
+        </select>
+
+        <br>
+
+        <input type="submit" value="Перевести">
+    </form>
+    <h1 th:text="${name}"></h1>
+</body>
+</html>
